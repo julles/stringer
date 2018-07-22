@@ -9,9 +9,7 @@ Stringer is stand alone PHP package for string manipulation with an expresive sy
 This package required composer
 
 ``` sh
-
-	composer require muhamadrezaar/stringer
-
+composer require muhamadrezaar/stringer
 ```
 
 then in your file php
