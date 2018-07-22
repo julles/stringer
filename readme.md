@@ -4,21 +4,37 @@
 
 Stringer is stand alone PHP package for string manipulation with an expresive syntax.
 
+### Instalation
+
+This package required composer
+
+``` sh
+
+	composer require muhamadrezaar/stringer
+
+```
+
+then in your file php
+
+```
+ include "vendor/autoload.php"; 
+```
+
 ### Example
 
 Here is the basic usage and some examples methods: 
 
 ``` sh
 <?php
+include "vendor/autoload.php";
+
 $str = new RezaAr\Stringer\Stringer("php is awesome");
 // or
 $str = stringer("php is awesome");
 
-$str->reverse()
-	->display(); // return "emosewa si php"
+$str->reverse()->display(); // return "emosewa si php"
 
-$str->substring(0,1)
-	->display(); // return "r"
+$str->substring(0,1)->display(); // return "r"
 
 ?>
 
