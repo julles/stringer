@@ -1,4 +1,6 @@
-<?php namespace RezaAr\Stringer;
+<?php
+
+namespace RezaAr\Stringer;
 
 class Stringer
 {
@@ -30,80 +32,88 @@ class Stringer
         return $this;
     }
 
-    public function camelCase($separator = " ")
+    public function camelCase($separator = ' ')
     {
-        $string  = $this->string;
+        $string = $this->string;
         $explode = explode($separator, $string);
-        $result  = "";
+        $result = '';
         foreach ($explode as $index => $row) {
             $result .= ucfirst($row);
         }
         $this->string = $result;
+
         return $this;
     }
 
-    public function appendFirst($first="")
+    public function appendFirst($first = '')
     {
-    	$this->string = $first.$this->string;
-    	return $this;
+        $this->string = $first.$this->string;
+
+        return $this;
     }
 
-    public function appendLast($last="")
+    public function appendLast($last = '')
     {
-    	$this->string = $this->string.$last;
-    	return $this;
+        $this->string = $this->string.$last;
+
+        return $this;
     }
 
-    public function repeat($loop=1,$separator="")
+    public function repeat($loop = 1, $separator = '')
     {
-    	$result="";
-    	for($a=0;$a<$loop;$a++)
-    	{
-    		$result .= $this->string.$separator;
-    	}
-    	$this->string = $result;
-    	return $this;
+        $result = '';
+        for ($a = 0; $a < $loop; $a++) {
+            $result .= $this->string.$separator;
+        }
+        $this->string = $result;
+
+        return $this;
     }
 
     public function upperFirst()
     {
-    	$this->string = ucfirst($this->string);
-    	return $this;
+        $this->string = ucfirst($this->string);
+
+        return $this;
     }
 
     public function lowerFirst()
     {
-    	$this->string = lcfirst($this->string);
-    	return $this;
+        $this->string = lcfirst($this->string);
+
+        return $this;
     }
 
     public function upperLast()
     {
-    	$last = ucfirst(strrev($this->string));
-    	$this->string = strrev($last);
-    	return $this;
+        $last = ucfirst(strrev($this->string));
+        $this->string = strrev($last);
+
+        return $this;
     }
 
     public function lowerLast()
     {
-    	$last = lcfirst(strrev($this->string));
-    	$this->string = strrev($last);
-    	return $this;
+        $last = lcfirst(strrev($this->string));
+        $this->string = strrev($last);
+
+        return $this;
     }
 
-    public function replace($search,$replace)
+    public function replace($search, $replace)
     {
-    	$replace = str_replace($search, $replace, $this->string);
+        $replace = str_replace($search, $replace, $this->string);
 
-    	$this->string = $replace;
+        $this->string = $replace;
 
-    	return $this;
+        return $this;
     }
 
     public function shuffle()
     {
-    	$this->string = str_shuffle($this->string);
-    	return $this;
+        $this->string = str_shuffle($this->string);
+
+        return $this;
     }
 
     public function display()
