@@ -2,6 +2,7 @@
 
 include "vendor/autoload.php";
 
-$str = stringer("Reza Ar");
+$str = stringer("reza");
 
-echo $str->reverse()->display();
+echo $str->appendFirst()
+->display()."\n";
