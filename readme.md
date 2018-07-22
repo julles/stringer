@@ -1,5 +1,9 @@
 # Stringer
 
+[![Total Downloads](https://poser.pugx.org/muhamadrezaar/stringer/d/total.svg)](https://poser.pugx.org/muhamadrezaar/stringer/d/total.svg)
+[![License](https://poser.pugx.org/muhamadrezaar/stringer/license.svg)](https://poser.pugx.org/muhamadrezaar/stringer/license.svg)
+[![License](https://img.shields.io/github/release/julles/stringer.svg?style=flat-square)](https://github.com/julles/stringer/releases)
+
 ### Introduction
 
 Stringer is stand alone PHP package for string manipulation with an expresive syntax.
