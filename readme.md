@@ -14,8 +14,11 @@ $str = new RezaAr\Stringer\Stringer("php is awesome");
 // or
 $str = stringer("php is awesome");
 
-$str->reverse()->display(); // return "emosewa si php"
-$str->substring(0,1)->display(); // return "r"
+$str->reverse()
+	->display(); // return "emosewa si php"
+
+$str->substring(0,1)
+	->display(); // return "r"
 
 ?>
 
