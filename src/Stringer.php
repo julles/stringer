@@ -30,10 +30,10 @@ class Stringer
         return $this;
     }
 
-    public function camelCase($param = " ")
+    public function camelCase($separator = " ")
     {
         $string  = $this->string;
-        $explode = explode($param, $string);
+        $explode = explode($separator, $string);
         $result  = "";
         foreach ($explode as $index => $row) {
             $result .= ucfirst($row);
